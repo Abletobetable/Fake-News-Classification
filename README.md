@@ -1,6 +1,18 @@
 # Kontur-NLP-task
 Задача детекции фейковых новостей.
-  1. Average embedding + MLP
-  2. предобученные navec news embeddings в связке с nn.Embeddings + LSTM
+
+Использованный стек:
+
+- pytorch
+
+- huggingface 
+
+- pretrained navec embeddings
+
+Подходы к решению (метрика f1_score):
+
+  1. navec news average embedding + MLP = 0.82
+  2. navec news как начальная инициализция, далее nn.Embeddings + LSTM = 0.86
+  3. pretrained Distilbert из huggingface = 
   
 Это задание было вступительным испытанием на стажировку в Контур(весна 2022)
